@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perusal Result</title>
+    <link href="materialize/css/icon.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="materialize/css/style.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper primary-background-color">
+      <a href="#" class="brand-logo"><span style="margin-left: 20px;">Perusal Result</span></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Login</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="row">
+        <div class="col s12 m6 l4 offset-l4 offset-m3">
+            <div class="card loginCard primary-color darken-1">
+                <div class="card-content">
+                    <span class="card-title center">Login</span>
+                    <form action="form_handling.php" id="Registration" method="POST" class="ajax">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="Email" type="email" name="email" class="validate" required>
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="Password" type="password" name="password" class="validate" required>
+                            <label for="Password">Password</label>
+                        </div>
+                    </div>
+                    
+                    <center>
+                        <button class="btn waves-effect waves-light primary-background-color" type="submit" name="login_button" name="action">Submit
+                            <i class="material-icons right">send</i>
+                    </button><br><br>
+                    </center>
+                    <a class="primary-color left" href="ForgotPassword.html">Forgot Password</a>
+                    <a class="primary-color right" href="ChangePassword.html">Change Password</a>
+                    <br>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="materialize/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="materialize/js/script.js"></script>
+</body>
+
+</html>
